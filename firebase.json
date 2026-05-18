@@ -1,0 +1,5 @@
+{
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "flutter": {"platforms":{"android":{"default":{"projectId":"notetaker-953d5","appId":"1:702718628394:android:597039b53485fb46466953","fileOutput":"android/app/google-services.json"}},"ios":{"default":{"projectId":"notetaker-953d5","appId":"1:702718628394:ios:ac1e7723eb50b28b466953","uploadDebugSymbols":false,"fileOutput":"ios/Runner/GoogleService-Info.plist"}},"dart":{"lib/firebase_options.dart":{"projectId":"notetaker-953d5","configurations":{"android":"1:702718628394:android:597039b53485fb46466953","ios":"1:702718628394:ios:ac1e7723eb50b28b466953"}}}}}}

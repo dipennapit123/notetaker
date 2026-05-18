@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "702718628394",
+    "project_id": "notetaker-953d5",
+    "storage_bucket": "notetaker-953d5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702718628394:android:597039b53485fb46466953",
+        "android_client_info": {
+          "package_name": "com.intelligencetech.note"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702718628394-75ejfjn31pqrefo3eqlsdisfmqp3qf9n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCe5ipEbwbx4Fm94WwqkovYRDH_5iCI5is"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702718628394-75ejfjn31pqrefo3eqlsdisfmqp3qf9n.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "702718628394-19avu19o3e5af80jom8rodsdqu7612hd.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.intelligencetech.note"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
