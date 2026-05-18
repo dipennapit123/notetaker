@@ -3,32 +3,32 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>702718628394-19avu19o3e5af80jom8rodsdqu7612hd.apps.googleusercontent.com</string>
+	<string>YOUR_IOS_CLIENT_ID.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.702718628394-19avu19o3e5af80jom8rodsdqu7612hd</string>
+	<string>com.googleusercontent.apps.YOUR_IOS_CLIENT_ID</string>
 	<key>API_KEY</key>
-	<string>AIzaSyD792p7rU14_RB4Q6zicNIQ4KGDhpxtBos</string>
+	<string>YOUR_IOS_API_KEY</string>
 	<key>GCM_SENDER_ID</key>
-	<string>702718628394</string>
+	<string>YOUR_PROJECT_NUMBER</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.intelligencetech.note</string>
+	<string>com.yourcompany.yourapp</string>
 	<key>PROJECT_ID</key>
-	<string>notetaker-953d5</string>
+	<string>your-firebase-project-id</string>
 	<key>STORAGE_BUCKET</key>
-	<string>notetaker-953d5.firebasestorage.app</string>
+	<string>your-firebase-project-id.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false></false>
+	<false/>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_GCM_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true></true>
+	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:702718628394:ios:ac1e7723eb50b28b466953</string>
+	<string>1:YOUR_PROJECT_NUMBER:ios:YOUR_IOS_APP_ID</string>
 </dict>
 </plist>

@@ -2,6 +2,17 @@
 
 Sleek Flutter note-taking app backed by **Firebase** (Firestore + Anonymous Auth).
 
+## Public repository / secrets
+
+Firebase **API keys and OAuth client IDs must not be committed**. This repo:
+
+- **Ignores** `android/app/google-services.json` and `ios/Runner/GoogleService-Info.plist` (copy from [Firebase Console](https://console.firebase.google.com/) or use FlutterFire CLI).
+- Ships **`lib/firebase_options.dart`** as a **stub** that throws until you configure Firebase locally.
+
+After you run `flutterfire configure`, your machine will have real `firebase_options.dart` plus the plist/json files. **Do not commit those regenerated files** if they contain production keys (keep them local or use a private fork). Example shapes live next to the real paths as `*.example` / `firebase_options.dart.example`.
+
+If keys ever appeared in Git history, **rotate** them in [Google Cloud Console → APIs & Services → Credentials](https://console.cloud.google.com/apis/credentials) and tighten Firebase with **App Check** and Firestore rules.
+
 ## Features
 
 - Dark, glassy Material 3 UI with DM Sans (via [google_fonts](https://pub.dev/packages/google_fonts))
@@ -20,7 +31,9 @@ Sleek Flutter note-taking app backed by **Firebase** (Firestore + Anonymous Auth
    flutterfire configure
    ```
 
-   This overwrites `lib/firebase_options.dart` and adds platform config (`google-services.json`, `GoogleService-Info.plist`, etc.).
+   This **replaces** `lib/firebase_options.dart` with real values and writes **`android/app/google-services.json`** and **`ios/Runner/GoogleService-Info.plist`** (both are **gitignored**). After cloning, you **must** run this step (or copy the example files and fill placeholders manually).
+
+   Alternatively, compare the committed templates: `android/app/google-services.json.example`, `ios/Runner/GoogleService-Info.plist.example`, `lib/firebase_options.dart.example`.
 
 4. Add Firestore security rules so users only access their own notes:
 

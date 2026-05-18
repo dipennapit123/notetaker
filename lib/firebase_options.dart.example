@@ -1,0 +1,55 @@
+// Example shape after `flutterfire configure`. Copy to firebase_options.dart
+// or let FlutterFire CLI generate the real file (recommended).
+//
+// This file is safe to commit — replace placeholders before use or run:
+//   flutterfire configure
+
+import 'package:firebase_core/firebase_core.dart' show FirebaseOptions;
+import 'package:flutter/foundation.dart'
+    show defaultTargetPlatform, kIsWeb, TargetPlatform;
+
+class DefaultFirebaseOptions {
+  static FirebaseOptions get currentPlatform {
+    if (kIsWeb) {
+      return web;
+    }
+    switch (defaultTargetPlatform) {
+      case TargetPlatform.android:
+        return android;
+      case TargetPlatform.iOS:
+      case TargetPlatform.macOS:
+        return ios;
+      default:
+        throw UnsupportedError(
+          'DefaultFirebaseOptions are not configured for this platform.',
+        );
+    }
+  }
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'YOUR_WEB_API_KEY',
+    appId: '1:YOUR_SENDER_ID:web:YOUR_WEB_APP_ID',
+    messagingSenderId: 'YOUR_SENDER_ID',
+    projectId: 'your-firebase-project-id',
+    authDomain: 'your-firebase-project-id.firebaseapp.com',
+    storageBucket: 'your-firebase-project-id.appspot.com',
+  );
+
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'YOUR_ANDROID_API_KEY',
+    appId: '1:YOUR_SENDER_ID:android:YOUR_ANDROID_APP_ID',
+    messagingSenderId: 'YOUR_SENDER_ID',
+    projectId: 'your-firebase-project-id',
+    storageBucket: 'your-firebase-project-id.appspot.com',
+  );
+
+  static const FirebaseOptions ios = FirebaseOptions(
+    apiKey: 'YOUR_IOS_API_KEY',
+    appId: '1:YOUR_SENDER_ID:ios:YOUR_IOS_APP_ID',
+    messagingSenderId: 'YOUR_SENDER_ID',
+    projectId: 'your-firebase-project-id',
+    storageBucket: 'your-firebase-project-id.appspot.com',
+    iosClientId: 'YOUR_IOS_CLIENT_ID.apps.googleusercontent.com',
+    iosBundleId: 'com.yourcompany.yourapp',
+  );
+}
